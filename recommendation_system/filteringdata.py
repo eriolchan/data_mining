@@ -23,7 +23,6 @@ def minkowski(rating1, rating2, r):
 def compute_nearest_neighbor(username, users):
   """creates a sorted list of users based on their distance to
   username"""
-
   distances = []
   for user in users:
     if user != username:
@@ -36,7 +35,6 @@ def compute_nearest_neighbor(username, users):
 
 def recommend(username, users):
   """Give list of recommendations"""
-
   # first find nearest neighbor
   nearest = compute_nearest_neighbor(username, users)[0][1]
   recommendations = []
